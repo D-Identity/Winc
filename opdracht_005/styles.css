@@ -1,0 +1,53 @@
+body { background-color: #f8e5e5;
+font-style: normal;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 18px;
+
+}
+
+h1,h2 {color: #fa255e;}
+
+p{
+    color: rgb(77, 2, 8);
+}
+.list {
+    color: rgb(77, 2, 8);
+}   
+
+.intro {
+    font-size: 22px;
+}
+ 
+.header{
+    border: #000000 solid;
+    margin: 15px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10p;
+/* is het zelfde als */
+    padding: 10px 20px ;
+}
+
+.main{
+    border: #000000 solid  ;
+    margin: 15px;
+    padding: 8px;
+    
+}
+
+.footer{
+    margin: 0 auto;
+    width: 300px;
+}
+
+.navlink{
+    list-style: none;
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.navlink li {
+    display: inline;
+}
