@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <title>Contact page</title>
+           <link rel="stylesheet" href="styles.css">
+    </head>
+       <body>
+        <header class="header">
+            <h1>Contact page</h1>
+        </header>
+        <nav>
+            <ul class="navlink">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+        </nav>
+        <main class="main">
+        
+            <form name="contact" method="POST" data-netlify="true">
+                <div>
+                        <label>First Name</label>
+                        <input type="text" name="FirstName" >
+                </div>
+                    <br>
+                <div>
+                        <label>Last Name</label>
+                        <input type="text" name="Email">
+                </div>
+                    <br>
+                <div>
+                        <label>Email</label>
+                        <input type="email" name="LastName">
+                </div>
+                    <br>
+                <div>
+                        <label>Telephone Number</label>
+                        <input type="number" name="Telephone" >
+                </div>
+                    <br>
+                <div>
+                        <label>Age:</label>
+                        <input type="number" name="age">
+                </div>
+                    <br>
+                <div>
+                        <label>Birthday:</label>
+                        <input type="date" name="birthday">
+                </div>
+                    <br>
+                <div>
+                        <label>Gender</label>
+                    <br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>	
+                </div>
+                    <br>
+                <div>
+                        <label>Favorite Cuisine</label>
+                    <br>
+                        <input type="checkbox" name="french"> French<br>
+                        <input type="checkbox" name="italian"> Italian<br>
+                        <input type="checkbox" name="spanish"> Spanish<br>
+                        <input type="checkbox" name="arabic"> Arabic<br>
+                </div>
+                    <br>
+                <div>
+                        <label for="favcolor">Select your favorite color:</label>
+                        <input type="color" id="favcolor" name="favcolor">
+                </div>
+                    <br>
+                <div>
+                        <label>Tell us about yourself</label>
+                    <br>
+                        <textarea name="Message" rows="5" cols="30"></textarea>
+                </div>
+                    <br>
+                <div>
+                        <label for="myfile">Upload your latest recipe:</label>
+                        <input type="file" id="myfile" name="myfile">
+                </div>
+                    <br>
+                <div>
+                        <a href="#">Go to recipes</a>
+                </div>      
+                    <br>
+                <div>
+                        <input type="submit" name="Submit" value="Submit">
+                        <input type="reset">
+                </div>
+                
+            </form>
+
+        </main>
+        <footer class="footer">
+                <nav>
+               <a href="index.html" >Go to home page</a>
+                </nav>
+        </footer>
+       </body>
+</html>
