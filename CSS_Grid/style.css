@@ -1,0 +1,62 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.container{
+    display: grid;
+    grid-gap: 5px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 4fr 2fr 1fr;
+    grid-template-areas: 
+        "h h h h h h h h h h"
+        "m m m m m m m m m m"
+        "w w w w w w w w w w"
+        "f f f f f f f f f f";
+}
+.container > div{
+    padding:1em;
+}
+
+.site-header{
+    background-color: chartreuse;
+    grid-area: h;
+}
+
+.site-main{
+    background-color: darkorchid;
+    grid-area: m;
+}
+
+.widget-area{
+    background-color: darkturquoise;
+    grid-area: w;
+}
+
+.site-footer{
+    background-color: gold;
+    grid-area: f;
+}
+
+/* Media Queries*/
+@media only screen and (min-width: 768px) {
+    .container{
+        grid-template-areas: 
+            "h h m m m m m m m m"
+            "h h m m m m m m m m"
+            "h h w w w w w w w w"
+            "h h f f f f f f f f";
+}
+
+@media only screen and (min-width: 1080px) {
+    .container{
+        grid-template-areas: 
+            "h h m m m m m m w w"
+            "h h m m m m m m w w"
+            "h h m m m m m m w w"
+            "h h f f f f f f w w";
+
+}
